@@ -1,0 +1,559 @@
+<html>
+
+<head>
+    <title style="color: blue">Medicaps University</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+        
+        #top {
+            height: 40px;
+            width: 100%;
+            background-color: rgba(0, 81, 255, 0.842);
+        }
+        
+        #whole_page {
+            height: 3000px;
+            width: 100%;
+        }
+        
+        #top ul li {
+            float: left;
+            font-size: 15px;
+            color: white;
+            list-style: none;
+            line-height: 40px;
+            position: relative;
+            left: 130px;
+            text-decoration: none;
+        }
+        
+        #top ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        span {
+            color: grey;
+        }
+        
+        #img1 {
+            width: 100%;
+            height: 650px;
+            background-image: url("1.jpg");
+        }
+        
+        #header {
+            height: 90px;
+            width: 100%;
+        }
+        
+        #logo {
+            height: 100%;
+            width: 40%;
+            position: relative;
+            left: 100px;
+            top: 5px;
+            float: left;
+        }
+        
+        #navigation {
+            float: right;
+            width: 60%;
+            height: 100%;
+            position: relative;
+            top: 30px;
+        }
+        
+        #navigation ul li {
+            color: red;
+            float: left;
+            width: 140px;
+            list-style: none;
+            font-size: 18px;
+        }
+        
+        #navigation ul li a {
+            color: red;
+            text-decoration: none;
+        }
+        
+        .black {
+            color: black;
+            font-size: 11px;
+        }
+        
+        #navigation ul ul li {
+            float: none;
+            position: relative;
+            top: 10px;
+            font-size: 13px;
+            line-height: 35px;
+            width: 200px;
+        }
+        
+        #navigation ul ul a {
+            color: black;
+        }
+        
+        #navigation ul ul {
+            display: none;
+        }
+        
+        #navigation ul li:hover>ul {
+            display: block;
+        }
+        
+        .red_line {
+            border: 4px solid red;
+            position: relative;
+            right: 4px;
+            display: none;
+        }
+        
+        #navigation ul li:hover>hr {
+            display: block;
+        }
+        
+        #navigation ul ul li:hover {
+            background-color: grey;
+            text-decoration: underline;
+        }
+        
+        #test {
+            height: 170px;
+            width: 100%;
+            position: relative;
+            bottom: 10px;
+        }
+        
+        #blue_box {
+            background-color: rgb(27, 53, 126);
+            height: 100%;
+            width: 360px;
+            position: relative;
+            left: 140px;
+            /* left: 6%;  70px  100px 130px*/
+            float: left;
+        }
+        
+        #red_box {
+            float: left;
+            height: 100%;
+            width: 360;
+            position: relative;
+            left: 170px;
+            background-color: red;
+        }
+        
+        #green_box {
+            float: left;
+            height: 100%;
+            width: 360;
+            position: relative;
+            left: 200px;
+            background-color: green;
+        }
+        
+        .images {
+            height: 80%;
+            width: 80%;
+            position: relative;
+            top: 10px;
+            left: 20px;
+        }
+        
+        #logo_1 {
+            height: 100px;
+            float: right;
+            width: 130px;
+            position: relative;
+            top: 170px;
+            left: 80px;
+        }
+        
+        #logo_2 {
+            background-color: rosybrown;
+            position: relative;
+            top: 275px;
+            left: 130px;
+            width: 50px;
+            height: 50px;
+            float: right;
+        }
+        
+        #logo_3 {
+            background-color: blue;
+            position: relative;
+            top: 330px;
+            left: 180px;
+            height: 50px;
+            width: 50px;
+            float: right;
+        }
+        
+        #logo_4 {
+            background-color: red;
+            position: relative;
+            top: 386px;
+            left: 230px;
+            height: 50px;
+            width: 50px;
+            float: right;
+        }
+        
+        #inner_1 {
+            height: 100px;
+            width: 130px;
+            background-color: green;
+            font-size: 10px;
+            position: relative;
+            left: 0px;
+        }
+        
+        #inner_2 {
+            height: 50px;
+            width: 130px;
+            background-color: orange;
+            font-size: 10px;
+            position: relative;
+            left: 0px;
+        }
+        
+        #inner_3 {
+            height: 50px;
+            width: 130px;
+            background-color: blue;
+            font-size: 10px;
+            position: relative;
+            left: 0px;
+        }
+        
+        #inner_4 {
+            height: 50px;
+            width: 130px;
+            background-color: red;
+            font-size: 10px;
+            position: relative;
+            left: 0px;
+        }
+        
+        #logo_1:hover>#inner_1 {
+            left: -70px;
+        }
+        
+        #logo_2:hover>#inner_2 {
+            left: -70px;
+        }
+        
+        #logo_3:hover>#inner_3 {
+            left: -70px;
+        }
+        
+        #logo_4:hover>#inner_4 {
+            left: -70px;
+        }
+        
+        .inner_text {
+            color: white;
+            font-size: 15px;
+            position: relative;
+            left: 50px;
+            top: -32px;
+        }
+        
+        #enroll {
+            font-size: 15px;
+            color: white;
+            transform: rotate(-90deg);
+            position: relative;
+            left: -41px;
+            top: -30px;
+        }
+        
+        #img_1 {
+            height: 40px;
+            width: 40px;
+        }
+        
+        #img_2 {
+            height: 40px;
+            width: 40px;
+            position: relative;
+            left: 5px;
+            top: 3px;
+        }
+        
+        #img_3 {
+            height: 40px;
+            width: 40px;
+            position: relative;
+            left: 5px;
+            top: 3px;
+        }
+        
+        #img_4 {
+            height: 40px;
+            width: 40px;
+            position: relative;
+            left: 5px;
+            top: 3px;
+        }
+        
+        #users {
+            background-color: rgb(241, 222, 222);
+            height: 450px;
+            width: 100%;
+            position: relative;
+            top: 40px;
+        }
+        
+        #user_img {
+            position: relative;
+            left: 80px;
+            float: left;
+        }
+        
+        p {
+            position: relative;
+            left: 180px;
+            top: 30px;
+            font-size: 20px;
+        }
+        
+        h1 {
+            color: red;
+            position: relative;
+            left: 180px;
+            top: 20px;
+        }
+        
+        #aicte {
+            color: rgb(156, 18, 18);
+            position: relative;
+            left: 180px;
+            top: 20px;
+        }
+        
+        #text {
+            font-size: 22px;
+            position: relative;
+            left: 180px;
+            top: 30px;
+        }
+        
+        #trans_img {
+            height: 240px;
+            width: 100%;
+            position: relative;
+            top: 90px;
+            background-color: rgb(19, 18, 18);
+        }
+        
+        #blank {
+            height: 600px;
+            width: 100%;
+            background-color: darksalmon;
+        }
+        
+        #big_div {
+            height: 700px;
+            width: 100%;
+            background-image: url(faculty2\ \(3\).jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top">
+        <ul>
+            <li><i class="fa fa-phone" aria-hidden="true"></i> Admission Helpline: 07969024444 ('0' dialing is mandatory before calling) &emsp; &emsp; <span>|</span> &emsp; &emsp;
+            </li>
+            <li><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <a href="#">info@medicaps.ac.in</a> &emsp; &emsp;
+                <span>|</span> &emsp;
+            </li>
+            <li>
+                <a href="#">Admission Open for 2022-2023.</a> &emsp; &emsp;
+                <span>|</span> &emsp;
+            </li>
+            <li> <i class="fa fa-user-o" aria-hidden="true"></i><a href="#">Career</a> &emsp; <span>| </span>&emsp;</li>
+            <li><a href="#">Pay E Fee</a> &emsp; &emsp;</li>
+        </ul>
+    </div>
+    <div id="whole_page">
+
+        <div id="img1">
+            <div id="header">
+                <div id="logo">
+                    <img src="logo_transparent.png" height="60px" width="250px">
+
+                </div>
+
+                <div id="navigation">
+                    <ul>
+                        <li><b><a href="#">ABOUT US</b><br /><span class="black">THE UNIVERSITY</span></a>
+                            <hr class="red_line">
+                            <ul>
+                                <li><a href="#">ABOUT UNIVERSITY</a></li>
+                                <li><a href="#">AUTHORITIES</a></li>
+                                <li><a href="#">CHANCELLOR</a></li>
+                                <li><a href="#">VICE CHANCELLOR</a></li>
+                                <li><a href="#">PRO VICE CHANCELLOR</a></li>
+                                <li><a href="#">DEANS</a></li>
+                                <li><a href="#">REGISTAR</a></li>
+                                <li><a href="#">UNIVERSITY INFO</a></li>
+                                <li><a href="#">FLASHES</a></li>
+                            </ul>
+                        </li>
+
+                        <li><b><a href="#">ACADEMICS</b><br /><span class="black">50+ PROGRAMS</span></a>
+                            <hr class="red_line">
+                            <ul>
+                                <li><a href="#">COURSES </a></li>
+                                <li><a href="#">ACADEMIC CALENDER</a></li>
+                                <li><a href="#">RESEARCH AT MEDICAPS</a></li>
+                                <li><a href="#">COMMITIES AND CELLS </a></li>
+                                <li><a href="#">FACULTY</a></li>
+                                <li><a href="#">EXAMINATION </a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#"> <b>ADMISSION</b><br /><span class="black">JOIN YOUR PASSION</span></a>
+                            <hr class="red_line">
+                            <ul>
+                                <li><a href="#">IMPORTANT DATES</a></li>
+                                <li><a href="#">HOW TO APPLY </a></li>
+                                <li><a href="#">REPORTING PROCEDURE</a></li>
+                                <li><a href="#">CANCELLATION RULES </a></li>
+                                <li><a href="#">CONTACT HERE</a></li>
+                                <li><a href="#">FEE STRUTURE</a></li>
+                                <li><a href="#">LIST OF REGISTERED PAC</a></li>
+                                <li><a href="#">COURSES </a></li>
+                                <li><a href="#">OTHER STATE OFFICES</a></li>
+                                <li><a href="#">APPLY NOW</a></li>
+
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="#">
+                                <b>CAMPUS</b><br /><span class="black">INFRA & FACILITIES</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><b>PLACEMENT</b><br /><span class="black">START YOUR CAREER</span></a>
+                            <hr class="red_line">
+                            <ul>
+                                <li><a href="#">PLACEMENT OFFICE</a></li>
+                                <li><a href="#">INTERNSHIP</a></li>
+                                <li><a href="#">PAST PLACEMENTS</a></li>
+                                <li><a href="#">SKILLS DEVELOPMENT CELL</a></li>
+                                <li><a href="#">OUR RECRUITERS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+
+
+            <div id="logo_1">
+                <div id=inner_1>
+                    <img src="education.png" id="img_1">
+                    <p id="enroll">Enquire<br> now</p>
+
+                </div>
+            </div>
+
+            <div id="logo_2">
+
+                <div id="inner_2">
+                    <img src="download (1).png" id="img_2">
+                    <p class="inner_text">download<br> broucher</p>
+
+                </div>
+            </div>
+
+            <div id="logo_3">
+                <div id="inner_3">
+                    <img src="reg.png" id="img_3">
+                    <p class="inner_text">online<br>Admission</p>
+
+                </div>
+            </div>
+
+            <div id="logo_4">
+                <div id="inner_4">
+                    <img src="alerts.png" id="img_4">
+                    <p class="inner_text">Important<br> Alerts!</p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="test">
+            <div id="blue_box">
+                <img src="placements.png" class="images">
+
+            </div>
+
+            <div id="red_box">
+                <img src="ranked1st.png" class="images">
+
+            </div>
+
+            <div id="green_box">
+                <img src="mhrd-nirf.png" class="images">
+            </div>
+
+        </div>
+
+
+        <div id="users">
+            <img src="welcome-left.png" id="user_img">
+
+            <p>WELCOME TO </p>
+            <br>
+            <h1>Medi-caps University</h1>
+            <h2 id="aicte"> (AICTE Approved)</h2>
+            <p id="text">Medi-Caps has been a brand name in the arena of technical education. Since its inception in July<br> 2000, Medi-Caps has consistently aimed at creating an ideal ambiance for budding technocrats and<br> managers; and helping them to grow like
+                true professionals. With its highly qualified faculty there<br> seems an optimal blend of academic brilliance and industry exposure, supplemented by highly<br>specialized visiting faculty and industry experts, senior professionals from
+                various segments of
+                <br> different industries and business houses. It was time now to spread wings and move out for more <br>exposure and widening of the periphery.<br> Hence the foundation of Medi-Caps University has been laid down. With a strong foundation
+                of the<br> Group since 15 years, Medi-Caps University wishes to maintain the same objective of imparting<br>quality education and producing sound professionals for the benefit of the society at large.</p>
+        </div>
+
+        <div id="trans_img">
+
+        </div>
+
+        <div id=blank>
+
+        </div>
+
+        <div id="big_div">
+            <div>
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+</body>
+
+</html>
