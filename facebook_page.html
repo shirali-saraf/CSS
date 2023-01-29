@@ -1,0 +1,187 @@
+<html>
+
+<head>
+    <title>
+        facebook
+    </title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        #header {
+            height: 100px;
+            width: 100%;
+            background: rgba(13, 13, 121, 0.877);
+        }
+        
+        #name {
+            height: 100px;
+            width: 40%;
+            background: rgba(13, 13, 121, 0.877);
+            float: left;
+            color: white;
+            font-size: 40px;
+        }
+        
+        #input {
+            height: 100px;
+            width: 60%;
+            background: rgba(13, 13, 121, 0.877);
+            float: left;
+        }
+        
+        #b1 {
+            position: absolute;
+            left: 210px;
+            top: 45px;
+        }
+        
+        #pic {
+            position: absolute;
+            top: 200px;
+            left: 80px;
+        }
+        
+        p {
+            color: blue;
+            position: absolute;
+            left: 250px;
+            font-size: 25;
+            top: 110px;
+        }
+        
+        #table {
+            position: relative;
+            left: 250px;
+            top: 18px;
+        }
+        
+        .email {
+            position: relative;
+            bottom: 10px;
+            right: 3px;
+        }
+        
+        #b2 {
+            color: black;
+            font-size: 35px;
+            position: relative;
+            left: 900px;
+        }
+        
+        #table2 {
+            position: relative;
+            left: 900px;
+            top: 60px;
+        }
+        
+        input[type=email] {
+            width: 100%;
+        }
+        
+        input[type=password] {
+            width: 100%;
+        }
+        
+        #submit {
+            font-size: 25px;
+            color: white;
+            background-color: green;
+        }
+        
+        #last_name {
+            position: relative;
+            right: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header">
+        <div id="name"><b id="b1">facebook</b></div>
+
+
+        <div id="input">
+            <form>
+                <table id="table">
+                    <tr>
+                        <td>
+                            <b style="color:white" class="email">email or phone </b><br>
+                            <input type="email" class="email">
+                        </td>
+
+                        <td>
+                            <b style="color:white">password</b><br>
+                            <input type="password"><br>
+                            <b style="color:white">forgotten password?</b>
+                        </td>
+
+                        <td><input type="submit" value="log in" style="color:white;background-color: rgba(18, 18, 66, 0.842);"></td>
+
+
+                    </tr>
+                </table>
+
+            </form>
+        </div>
+
+
+    </div>
+    <p><b>facebook helps you connect<br> and share with the people in<br> your life</b></p>
+    <img src="https://ludralph.github.io/facebookloginclone/img/map.png" height=400px width=750px id="pic">
+
+    <b id="b2"> Create an account</b>
+
+    <table id="table2" cellspacing="20px">
+        <tr>
+            <td id="first_name"><input type="text" placeholder="First name"> </td>
+            <td><input type="text" placeholder="last name" id="last_name"></td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><input type="email" placeholder="mobile number or email address" width=20px></td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <input type="password" placeholder="new password">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Birthday <br> <input type="date">
+
+        </tr>
+
+        <tr>
+            <td><input type="radio" name="gender" value="male">male
+                <input type="radio" name="gender" value="female">female
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" style="color:blue">By clicking Create an account, you agree to our terms and<br> confirm that you have read our data policy, including our cokiee<br> policy.you may receive SMS message notification from<br> facebook and can opt out at any time.
+
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="submit" value="create an account" id="submit">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <span style="color :blue"><u>Create a Page</u></span> for a celebrity, band or business.
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
